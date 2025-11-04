@@ -45,7 +45,7 @@
 
         kha {
             bindings = <&kp RU_CYRILLIC_HA>;
-            key-positions = <6 7 26 27>;
+            key-positions = <6 7>;
             layers = <1>;
         };
 
