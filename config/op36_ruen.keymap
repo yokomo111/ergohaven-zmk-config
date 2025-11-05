@@ -175,7 +175,7 @@
             bindings = <
   &kp N1         &kp N2    &kp N3     &kp N4     &kp N5                             &kp N6    &kp N7           &kp N8           &kp N9        &kp N0
   &hml LGUI ESC  &kp LALT  &kp LSHFT  &kp LCTRL  &kp PRINTSCREEN                    &none     &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP  &hmr RGUI RIGHT
-  &layer_en      &none     &none      &none      &none                              &kp HOME  &kp END          &none            &none         &layer_ru
+  &layer_en      &none     &none      &none      &kp DEL                            &kp HOME  &kp END          &none            &none         &layer_ru
                                       &trans     &none            &trans    &trans  &mo 5     &trans
             >;
 
