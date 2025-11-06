@@ -59,13 +59,14 @@
             bindings = <&layer_en>;
             key-positions = <2 3>;
             layers = <1>;
-            require-prior-idle-ms = <15>;
+            require-prior-idle-ms = <25>;
         };
 
         cmbru {
             bindings = <&layer_ru>;
             key-positions = <2 3>;
             layers = <0>;
+            require-prior-idle-ms = <25>;
         };
     };
 
