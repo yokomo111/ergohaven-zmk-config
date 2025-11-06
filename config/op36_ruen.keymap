@@ -59,6 +59,7 @@
             bindings = <&layer_en>;
             key-positions = <2 3>;
             layers = <1>;
+            require-prior-idle-ms = <15>;
         };
 
         cmbru {
@@ -122,6 +123,13 @@
             wait-ms = <0>;
             tap-ms = <30>;
         };
+
+        shift_f9: shift_f9 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(F9)>;
+            label = "SHIFT_F9";
+        };
     };
 
     keymap {
@@ -173,10 +181,10 @@
 
         nav {
             bindings = <
-  &kp N1         &kp N2    &kp N3     &kp N4     &kp N5                             &kp N6    &kp N7           &kp N8           &kp N9        &kp N0
-  &hml LGUI ESC  &kp LALT  &kp LSHFT  &kp LCTRL  &kp PRINTSCREEN                    &none     &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP  &hmr RGUI RIGHT
-  &layer_en      &none     &none      &none      &kp DEL                            &kp HOME  &kp END          &none            &none         &layer_ru
-                                      &trans     &none            &trans    &trans  &mo 5     &trans
+  &kp N1         &kp N2     &kp N3     &kp N4     &kp N5                             &kp N6    &kp N7           &kp N8              &kp N9               &kp N0
+  &hml LGUI ESC  &kp LALT   &kp LSHFT  &kp LCTRL  &kp PRINTSCREEN                    &none     &hmr RCTRL LEFT  &hmr RSHFT DOWN     &hmr LALT UP         &hmr RGUI RIGHT
+  &layer_en      &shift_f9  &none      &none      &kp DEL                            &kp HOME  &kp END          &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &layer_ru
+                                       &trans     &none            &trans    &trans  &mo 5     &trans
             >;
 
             display-name = "Navigation";
