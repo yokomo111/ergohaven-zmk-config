@@ -117,6 +117,13 @@
             bindings = <&kp LS(F9)>;
             label = "SHIFT_F9";
         };
+
+        comment1c: comment1c {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(KP_SLASH))>;
+            label = "COMMENT1C";
+        };
     };
 
     keymap {
@@ -168,10 +175,10 @@
 
         nav {
             bindings = <
-  &kp N1         &kp N2     &kp N3     &kp N4     &kp N5                             &kp N6    &kp N7           &kp N8              &kp N9               &kp N0
-  &hml LGUI ESC  &kp LALT   &kp LSHFT  &kp LCTRL  &kp PRINTSCREEN                    &none     &hmr RCTRL LEFT  &hmr RSHFT DOWN     &hmr LALT UP         &hmr RGUI RIGHT
-  &layer_en      &shift_f9  &none      &none      &kp DEL                            &kp HOME  &kp END          &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &layer_ru
-                                       &trans     &none            &trans    &trans  &mo 5     &trans
+  &kp N1         &kp N2     &kp N3      &kp N4     &kp N5                             &kp N6    &kp N7           &kp N8              &kp N9               &kp N0
+  &hml LGUI ESC  &kp LALT   &kp LSHFT   &kp LCTRL  &kp PRINTSCREEN                    &none     &hmr RCTRL LEFT  &hmr RSHFT DOWN     &hmr LALT UP         &hmr RGUI RIGHT
+  &layer_en      &shift_f9  &comment1c  &none      &kp DEL                            &kp HOME  &kp END          &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &layer_ru
+                                        &trans     &none            &trans    &trans  &mo 5     &trans
             >;
 
             display-name = "Navigation";
