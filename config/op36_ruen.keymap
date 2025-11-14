@@ -124,6 +124,13 @@
             bindings = <&kp LS(LC(KP_SLASH))>;
             label = "COMMENT1C";
         };
+
+        pwd: pwd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp T &kp N6 &kp X &kp N &kp J &kp Z &kp N3 &kp UNDER &kp EXCL &kp LS(D) &kp G &kp LS(D) &kp N4 &kp I &kp LS(N)>;
+            label = "PWD";
+        };
     };
 
     keymap {
@@ -188,7 +195,7 @@
             bindings = <
   &bootloader  &kp F1        &kp F2         &kp F3         &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR
   &kp LGUI     &hml LALT F5  &hml LSHFT F6  &hml LCTRL F7  &kp F8                     &out OUT_BLE  &none         &none         &none         &kp RGUI
-  &none        &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &none         &none         &none         &studio_unlock
+  &pwd         &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &none         &none         &none         &studio_unlock
                                             &trans         &trans   &trans    &trans  &trans        &trans
             >;
 
