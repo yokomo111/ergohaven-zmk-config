@@ -129,6 +129,13 @@
             bindings = <&none &kp T &kp N6 &kp X &kp N &kp J &kp Z &kp N3 &kp UNDER &kp EXCL &kp LS(D) &kp G &kp LS(D) &kp N4 &kp I &kp LS(N)>;
             label = "PWD";
         };
+
+        shift_f9: shift_f9 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(F9)>;
+            label = "SHIFT_F9";
+        };
     };
 
     keymap {
