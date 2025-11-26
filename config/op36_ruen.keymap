@@ -66,14 +66,19 @@
 
         cmben {
             bindings = <&layer_en>;
-            key-positions = <10 11>;
+            key-positions = <22 23>;
             layers = <1>;
         };
 
         cmbru {
             bindings = <&layer_ru>;
-            key-positions = <18 19>;
+            key-positions = <22 23>;
             layers = <0>;
+        };
+
+        toggle {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <10 11>;
         };
     };
 
