@@ -55,25 +55,25 @@
         kha {
             bindings = <&kp RU_CYRILLIC_HA>;
             key-positions = <26 27>;
-            layers = <0>;
+            layers = <1>;
         };
 
         hrdsgn {
             bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
             key-positions = <27 28>;
-            layers = <0>;
+            layers = <1>;
         };
 
         cmben {
             bindings = <&layer_en>;
             key-positions = <22 23>;
-            layers = <0>;
+            layers = <1>;
         };
 
         cmbru {
             bindings = <&layer_ru>;
             key-positions = <22 23>;
-            layers = <1>;
+            layers = <0>;
         };
     };
 
@@ -99,7 +99,7 @@
         layer_en: layer_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 1 &to_en>;
+            bindings = <&to 0 &to_en>;
             label = "LAYER_EN";
             wait-ms = <0>;
             tap-ms = <30>;
@@ -108,7 +108,7 @@
         layer_ru: layer_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &to_ru>;
+            bindings = <&to 1 &to_ru>;
             label = "LAYER_RU";
             tap-ms = <30>;
             wait-ms = <0>;
@@ -149,7 +149,7 @@
         lg_tog: lg_tog {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &tog 0>;
+            bindings = <&kp LG(SPACE) &tog 1>;
             label = "LG_TOG";
         };
 
@@ -164,6 +164,17 @@
     keymap {
         compatible = "zmk,keymap";
 
+        en {
+            bindings = <
+  &kp Q        &kp W        &kp E         &kp R         &kp T                          &kp Y  &kp U          &kp I         &kp O        &kp P
+  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                          &kp H  &hmr RCTRL J   &hmr RSHFT K  &hmr LALT L  &hmr RGUI SEMICOLON
+  &kp Z        &kp X        &kp C         &kp V         &kp B                          &kp N  &kp M          &kp COMMA     &kp DOT      &kp SQT
+                                          &layer_ru     &mo 5  &lg_space    &kp ENTER  &mo 5  &kp BACKSPACE
+            >;
+
+            display-name = "Base";
+        };
+
         ru {
             bindings = <
   &kp RU_CYRILLIC_SHORT_I   &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
@@ -173,17 +184,6 @@
             >;
 
             display-name = "Ru";
-        };
-
-        en {
-            bindings = <
-  &kp Q        &kp W        &kp E         &kp R         &kp T                          &kp Y  &kp U          &kp I         &kp O        &kp P
-  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                          &kp H  &hmr RCTRL J   &hmr RSHFT K  &hmr LALT L  &hmr RGUI SEMICOLON
-  &kp Z        &kp X        &kp C         &kp V         &kp B                          &kp N  &kp M          &kp COMMA     &kp DOT      &kp SQT
-                                          &none         &mo 5  &lg_space    &kp ENTER  &mo 5  &kp BACKSPACE
-            >;
-
-            display-name = "Base";
         };
 
         sym_en {
