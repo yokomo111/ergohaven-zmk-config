@@ -169,7 +169,7 @@
   &kp Q        &kp W        &kp E         &kp R         &kp T                          &kp Y  &kp U          &kp I         &kp O        &kp P
   &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                          &kp H  &hmr RCTRL J   &hmr RSHFT K  &hmr LALT L  &hmr RGUI SEMICOLON
   &kp Z        &kp X        &kp C         &kp V         &kp B                          &kp N  &kp M          &kp COMMA     &kp DOT      &kp SQT
-                                          &none         &mo 4  &lg_space    &kp ENTER  &mo 2  &kp BACKSPACE
+                                          &none         &mo 4  &lg_space    &kp ENTER  &mo 3  &kp BACKSPACE
             >;
 
             display-name = "Base";
@@ -180,21 +180,10 @@
   &kp RU_CYRILLIC_SHORT_I   &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
   &hml LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr RGUI RU_CYRILLIC_ZHE
   &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
-                                                                                   &none                     &mo 4               &lg_space    &kp ENTER  &mo 3               &kp BACKSPACE
+                                                                                   &none                     &mo 4               &lg_space    &kp ENTER  &mo 2               &kp BACKSPACE
             >;
 
             display-name = "Ru";
-        };
-
-        sym_en {
-            bindings = <
-  &kp TILDE       &kp LT          &kp EQUAL         &kp GT           &kp RU_DQT                    &kp CARET  &kp LBKT         &kp UNDER        &kp RBKT        &kp DLLR
-  &hml LGUI BSLH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                      &kp PRCNT  &hmr RCTRL LBRC  &hmr RSHFT SEMI  &hmr LALT RBRC  &hmr RGUI EXCL
-  &kp HASH        &kp STAR        &kp COLON         &kp FSLH         &kp AMPS                      &kp AT     &kp PIPE         &kp COMMA        &kp DOT         &kp QMARK
-                                                    &trans           &mo 5       &trans    &trans  &none      &trans
-            >;
-
-            display-name = "Symbols";
         };
 
         sym_ru {
@@ -203,6 +192,17 @@
   &hml LGUI RU_BACKSLASH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                      &kp PRCNT  &en LBRC  &hmr RSHFT RU_SEMI  &en RBRC    &hmr RGUI EXCL
   &en HASH                &kp STAR        &kp RU_COLON      &kp RU_FSLH      &en AMPS                      &en AT     &en PIPE  &kp RU_COMMA        &kp RU_DOT  &kp RU_QMARK
                                                             &trans           &mo 5       &trans    &trans  &none      &trans
+            >;
+
+            display-name = "Symbols";
+        };
+
+        sym_en {
+            bindings = <
+  &kp TILDE       &kp LT          &kp EQUAL         &kp GT           &kp RU_DQT                    &kp CARET  &kp LBKT         &kp UNDER        &kp RBKT        &kp DLLR
+  &hml LGUI BSLH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                      &kp PRCNT  &hmr RCTRL LBRC  &hmr RSHFT SEMI  &hmr LALT RBRC  &hmr RGUI EXCL
+  &kp HASH        &kp STAR        &kp COLON         &kp FSLH         &kp AMPS                      &kp AT     &kp PIPE         &kp COMMA        &kp DOT         &kp QMARK
+                                                    &trans           &mo 5       &trans    &trans  &none      &trans
             >;
 
             display-name = "Symbols";
