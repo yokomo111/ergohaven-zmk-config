@@ -156,8 +156,15 @@
         comment1c: comment1c {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LC(SLASH)>;
             label = "COMMENT1C";
+        };
+
+        uncommnent1c: uncommnent1c {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(SLASH))>;
+            label = "UNCOMMNENT1C";
         };
     };
 
@@ -210,10 +217,10 @@
 
         nav {
             bindings = <
-  &kp N1         &kp N2     &kp N3     &kp N4     &kp N5                             &kp N6    &kp N7           &kp N8           &kp N9               &kp N0
-  &hml LGUI ESC  &kp LALT   &kp LSHFT  &kp LCTRL  &kp PRINTSCREEN                    &kp TAB   &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP         &hmr RGUI RIGHT
-  &layer_en      &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp DELETE                         &kp HOME  &kp END          &kp LC(LEFT)     &kp LC(RIGHT_ARROW)  &layer_ru
-                                       &trans     &none            &trans    &trans  &mo 5     &trans
+  &kp N1         &kp N2         &kp N3      &kp N4           &kp N5                             &kp N6    &kp N7           &kp N8           &kp N9               &kp N0
+  &hml LGUI ESC  &kp LALT       &kp LSHFT   &kp LCTRL        &kp PRINTSCREEN                    &kp TAB   &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP         &hmr RGUI RIGHT
+  &layer_en      &kp LC(K_CUT)  &kp K_COPY  &kp LC(K_PASTE)  &kp DELETE                         &kp HOME  &kp END          &kp LC(LEFT)     &kp LC(RIGHT_ARROW)  &layer_ru
+                                            &trans           &none            &trans    &trans  &mo 5     &trans
             >;
 
             display-name = "Navigation";
@@ -221,9 +228,9 @@
 
         adj {
             bindings = <
-  &bootloader  &kp F1        &kp F2         &kp F3         &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR
-  &kp LGUI     &hml LALT F5  &hml LSHFT F6  &hml LCTRL F7  &kp F8                     &out OUT_BLE  &none         &none         &none         &kp RGUI
-  &pwd         &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &shift_f9     &none         &none         &studio_unlock
+  &bootloader  &kp F1        &kp F2         &kp F3         &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_CLR
+  &kp LGUI     &hml LALT F5  &hml LSHFT F6  &hml LCTRL F7  &kp F8                     &out OUT_BLE  &none         &none         &none          &kp RGUI
+  &pwd         &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &shift_f9     &comment1c    &uncommnent1c  &studio_unlock
                                             &trans         &trans   &trans    &trans  &trans        &trans
             >;
 
