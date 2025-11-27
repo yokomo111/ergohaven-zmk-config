@@ -166,6 +166,30 @@
             bindings = <&kp LC(LS(SLASH))>;
             label = "UNCOMMNENT1C";
         };
+
+        cut: cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(X)>;
+            label = "CUT";
+            wait-ms = <25>;
+        };
+
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C)>;
+            label = "COPY";
+            wait-ms = <25>;
+        };
+
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(V)>;
+            label = "PASTE";
+            wait-ms = <25>;
+        };
     };
 
     keymap {
@@ -217,10 +241,10 @@
 
         nav {
             bindings = <
-  &kp N1         &kp N2     &kp N3      &kp N4       &kp N5                             &kp N6    &kp N7           &kp N8           &kp N9               &kp N0
-  &hml LGUI ESC  &kp LALT   &kp LSHFT   &kp LCTRL    &kp PRINTSCREEN                    &kp TAB   &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP         &hmr RGUI RIGHT
-  &layer_en      &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp DELETE                         &kp HOME  &kp END          &kp LC(LEFT)     &kp LC(RIGHT_ARROW)  &layer_ru
-                                        &trans       &none            &trans    &trans  &mo 5     &trans
+  &kp N1         &kp N2    &kp N3     &kp N4     &kp N5                             &kp N6    &kp N7           &kp N8           &kp N9               &kp N0
+  &hml LGUI ESC  &kp LALT  &kp LSHFT  &kp LCTRL  &kp PRINTSCREEN                    &kp TAB   &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP         &hmr RGUI RIGHT
+  &layer_en      &cut      &copy      &paste     &kp DELETE                         &kp HOME  &kp END          &kp LC(LEFT)     &kp LC(RIGHT_ARROW)  &layer_ru
+                                      &trans     &none            &trans    &trans  &mo 5     &trans
             >;
 
             display-name = "Navigation";
