@@ -208,7 +208,7 @@
   &kp Q        &kp W        &kp E         &kp R         &kp T                          &kp Y  &kp U          &kp I         &kp O        &kp P
   &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                          &kp H  &hmr RCTRL J   &hmr RSHFT K  &hmr LALT L  &hmr RGUI SEMICOLON
   &kp Z        &kp X        &kp C         &kp V         &kp B                          &kp N  &kp M          &kp COMMA     &kp DOT      &kp SQT
-                                          &none         &mo 4  &lg_space    &kp ENTER  &mo 2  &kp BACKSPACE
+                                          &mo 6         &mo 4  &lg_space    &kp ENTER  &mo 2  &kp BACKSPACE
             >;
 
             display-name = "Base";
@@ -260,13 +260,22 @@
 
         adj {
             bindings = <
-  &bootloader  &kp F1        &kp F2         &kp F3         &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_CLR
-  &kp LGUI     &hml LALT F5  &hml LSHFT F6  &hml LCTRL F7  &kp F8                     &out OUT_BLE  &none         &none         &sync          &kp RGUI
-  &pwd         &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &shift_f9     &comment1c    &uncommnent1c  &studio_unlock
-                                            &trans         &trans   &trans    &trans  &trans        &trans
+  &none     &kp F1        &kp F2         &kp F3         &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1  &none  &bootloader  &bt BT_CLR
+  &kp LGUI  &hml LALT F5  &hml LSHFT F6  &hml LCTRL F7  &kp F8                     &out OUT_BLE  &none         &none  &sync        &kp RGUI
+  &pwd      &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &none         &none  &none        &studio_unlock
+                                         &trans         &trans   &trans    &trans  &trans        &trans
             >;
 
             display-name = "Adjust";
+        };
+
+        layer_6 {
+            bindings = <
+  &trans  &trans     &trans      &trans         &trans                    &trans  &trans  &trans  &trans  &trans
+  &sync   &shift_f9  &comment1c  &uncommnent1c  &trans                    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans     &trans      &trans         &trans                    &trans  &trans  &trans  &trans  &trans
+                                 &trans         &trans  &trans    &trans  &trans  &trans
+            >;
         };
     };
 };
