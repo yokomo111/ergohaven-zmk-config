@@ -269,12 +269,13 @@
             display-name = "Adjust";
         };
 
-        layer_6 {
+        newl {
+            display-name = "newl";
             bindings = <
-  &none  &none      &none       &none          &none                    &none  &none   &none  &none  &none
-  &sync  &shift_f9  &comment1c  &uncommnent1c  &none                    &none  &none   &none  &none  &none
-  &none  &none      &none       &none          &none                    &none  &none   &none  &none  &none
-                                &trans         &none  &trans    &trans  &none  &trans
+  &none  &none  &none  &none  &none                    &none  &none   &none  &none  &none
+  &sync  &none  &none  &none  &none                    &none  &none   &none  &none  &none
+  &none  &none  &none  &none  &none                    &none  &none   &none  &none  &none
+                       &none  &none  &trans    &trans  &none  &trans
             >;
         };
     };
