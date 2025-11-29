@@ -271,10 +271,10 @@
 
         layer_6 {
             bindings = <
-  &trans  &trans     &trans      &trans         &trans                    &trans  &trans  &trans  &trans  &trans
-  &sync   &shift_f9  &comment1c  &uncommnent1c  &trans                    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans     &trans      &trans         &trans                    &trans  &trans  &trans  &trans  &trans
-                                 &trans         &trans  &trans    &trans  &trans  &trans
+  &none  &none      &none       &none          &none                    &none  &none   &none  &none  &none
+  &sync  &shift_f9  &comment1c  &uncommnent1c  &none                    &none  &none   &none  &none  &none
+  &none  &none      &none       &none          &none                    &none  &none   &none  &none  &none
+                                &trans         &none  &trans    &trans  &none  &trans
             >;
         };
     };
