@@ -230,7 +230,7 @@
   &kp TILDE       &kp LT          &kp EQUAL         &kp GT           &kp RU_DQT                    &kp CARET  &kp LBKT         &kp UNDER        &kp RBKT        &kp DLLR
   &hml LGUI BSLH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                      &kp PRCNT  &hmr RCTRL LBRC  &hmr RSHFT SEMI  &hmr LALT RBRC  &hmr RGUI EXCL
   &kp HASH        &kp STAR        &kp COLON         &kp FSLH         &kp AMPS                      &kp AT     &kp PIPE         &kp COMMA        &kp DOT         &kp QMARK
-                                                    &trans           &mo 5       &trans    &trans  &none      &trans
+                                                    &none            &mo 5       &trans    &trans  &none      &trans
             >;
 
             display-name = "Symbols";
@@ -241,7 +241,7 @@
   &en TILDE               &en LT          &kp EQUAL         &en GT           &en RU_DQT                    &en CARET  &en LBKT  &kp UNDER           &en RBKT    &en DLLR
   &hml LGUI RU_BACKSLASH  &hml LALT LPAR  &hml LSHFT MINUS  &hml LCTRL RPAR  &kp PLUS                      &kp PRCNT  &en LBRC  &hmr RSHFT RU_SEMI  &en RBRC    &hmr RGUI EXCL
   &en HASH                &kp STAR        &kp RU_COLON      &kp RU_FSLH      &en AMPS                      &en AT     &en PIPE  &kp RU_COMMA        &kp RU_DOT  &kp RU_QMARK
-                                                            &trans           &mo 5       &trans    &trans  &none      &trans
+                                                            &none            &mo 5       &trans    &trans  &none      &trans
             >;
 
             display-name = "Symbols";
@@ -252,7 +252,7 @@
   &kp N1         &kp N2     &kp N3     &kp N4     &kp N5                             &kp N6    &kp N7          &kp N8          &kp N9               &kp N0
   &hml LGUI ESC  &kp LALT   &kp LSHFT  &kp LCTRL  &kp PRINTSCREEN                    &kp TAB   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW         &kp RIGHT_ARROW
   &kp LC(F)      &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp DELETE                         &kp HOME  &kp END         &kp LC(LEFT)    &kp LC(RIGHT_ARROW)  &none
-                                       &trans     &none            &trans    &trans  &mo 5     &trans
+                                       &none      &none            &trans    &trans  &mo 5     &trans
             >;
 
             display-name = "Navigation";
@@ -263,7 +263,7 @@
   &none     &kp F1        &kp F2         &kp F3         &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1  &none  &bootloader  &bt BT_CLR
   &kp LGUI  &hml LALT F5  &hml LSHFT F6  &hml LCTRL F7  &kp F8                     &out OUT_BLE  &none         &none  &none        &kp RGUI
   &pwd      &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &none         &none  &none        &studio_unlock
-                                         &trans         &trans   &trans    &trans  &trans        &trans
+                                         &none          &trans   &trans    &trans  &trans        &trans
             >;
 
             display-name = "Adjust";
@@ -272,10 +272,10 @@
         newl {
             display-name = "newl";
             bindings = <
-  &none      &none      &none          &none       &none                     &none   &none   &none  &none  &none
-  &sync      &shift_f9  &uncommnent1c  &comment1c  &none                     &none   &none   &none  &none  &none
-  &layer_en  &none      &none          &none       &none                     &none   &none   &none  &none  &layer_ru
-                                       &trans      &trans  &trans    &trans  &trans  &trans
+  &none      &none      &none          &none       &none                    &none  &none   &none  &none  &none
+  &sync      &shift_f9  &uncommnent1c  &comment1c  &none                    &none  &none   &none  &none  &none
+  &layer_en  &none      &none          &none       &none                    &none  &none   &none  &none  &layer_ru
+                                       &trans      &none  &trans    &trans  &none  &trans
             >;
         };
     };
