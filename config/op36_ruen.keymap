@@ -249,10 +249,10 @@
 
         nav {
             bindings = <
-  &kp N1         &kp N2    &kp N3     &kp N4     &kp N5                             &kp N6    &kp N7           &kp N8           &kp N9               &kp N0
-  &hml LGUI ESC  &kp LALT  &kp LSHFT  &kp LCTRL  &kp PRINTSCREEN                    &kp TAB   &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP         &hmr RGUI RIGHT
-  &layer_en      &cut      &copy      &paste     &kp DELETE                         &kp HOME  &kp END          &kp LC(LEFT)     &kp LC(RIGHT_ARROW)  &layer_ru
-                                      &trans     &none            &trans    &trans  &mo 5     &trans
+  &kp N1         &kp N2     &kp N3     &kp N4     &kp N5                             &kp N6    &kp N7          &kp N8          &kp N9               &kp N0
+  &hml LGUI ESC  &kp LALT   &kp LSHFT  &kp LCTRL  &kp PRINTSCREEN                    &kp TAB   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW         &kp RIGHT_ARROW
+  &kp LC(F)      &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp DELETE                         &kp HOME  &kp END         &kp LC(LEFT)    &kp LC(RIGHT_ARROW)  &none
+                                       &trans     &none            &trans    &trans  &mo 5     &trans
             >;
 
             display-name = "Navigation";
@@ -272,10 +272,10 @@
         newl {
             display-name = "newl";
             bindings = <
-  &none  &none      &none          &none       &none                    &none  &none   &none  &none  &none
-  &sync  &shift_f9  &uncommnent1c  &comment1c  &none                    &none  &none   &none  &none  &none
-  &none  &none      &none          &none       &none                    &none  &none   &none  &none  &none
-                                   &none       &none  &trans    &trans  &none  &trans
+  &none      &none      &none          &none       &none                    &none  &none   &none  &none  &none
+  &sync      &shift_f9  &uncommnent1c  &comment1c  &none                    &none  &none   &none  &none  &none
+  &layer_en  &none      &none          &none       &none                    &none  &none   &none  &none  &layer_ru
+                                       &none       &none  &trans    &trans  &none  &trans
             >;
         };
     };
