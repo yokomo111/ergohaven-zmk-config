@@ -156,39 +156,15 @@
         comment1c: comment1c {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(SLASH)>;
+            bindings = <&kp LC(KP_DIVIDE)>;
             label = "COMMENT1C";
         };
 
         uncommnent1c: uncommnent1c {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(SLASH))>;
+            bindings = <&kp LC(LS(KP_DIVIDE))>;
             label = "UNCOMMNENT1C";
-        };
-
-        cut: cut {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(X)>;
-            label = "CUT";
-            wait-ms = <25>;
-        };
-
-        copy: copy {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(C)>;
-            label = "COPY";
-            wait-ms = <25>;
-        };
-
-        paste: paste {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(V)>;
-            label = "PASTE";
-            wait-ms = <25>;
         };
 
         sync: sync {
