@@ -236,10 +236,10 @@
 
         adj {
             bindings = <
-  &none     &kp F1        &kp F2         &kp F3         &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1  &none           &bootloader   &bt BT_CLR
-  &kp LGUI  &hml LALT F5  &hml LSHFT F6  &hml LCTRL F7  &kp F8                     &out OUT_BLE  &kp LCTRL     &kp LEFT_SHIFT  &kp LEFT_ALT  &kp RGUI
-  &pwd      &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &none         &none           &none         &studio_unlock
-                                         &none          &trans   &trans    &trans  &trans        &trans
+  &none            &kp F1  &kp F2   &kp F3   &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1  &none       &bootloader  &bt BT_CLR
+  &kp PAUSE_BREAK  &kp F5  &kp F6   &kp F7   &kp F8                     &out OUT_BLE  &kp LCTRL     &kp LSHIFT  &kp LALT     &kp LGUI
+  &none            &kp F9  &kp F10  &kp F11  &kp F12                    &out OUT_USB  &none         &none       &none        &studio_unlock
+                                    &none    &trans   &trans    &trans  &trans        &trans
             >;
 
             display-name = "Adjust";
@@ -247,7 +247,7 @@
 
         layer_6 {
             bindings = <
-  &none      &none      &none       &none          &none                  &none  &none  &none  &none  &none
+  &none      &none      &none       &none          &none                  &none  &none  &none  &none  &pwd
   &sync      &shift_f9  &comment1c  &uncommnent1c  &none                  &none  &none  &none  &none  &none
   &layer_en  &none      &none       &none          &none                  &none  &none  &none  &none  &layer_ru
                                     &none          &none  &none    &none  &none  &none
