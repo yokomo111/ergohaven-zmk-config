@@ -144,6 +144,7 @@
             #binding-cells = <0>;
             bindings = <&kp LS(F9)>;
             label = "SHIFT_F9";
+            wait-ms = <60>;
         };
 
         lg_tog: lg_tog {
