@@ -137,6 +137,7 @@
             #binding-cells = <0>;
             bindings = <&none &kp T &kp N6 &kp X &kp N &kp J &kp Z &kp N3 &kp UNDER &kp EXCL &kp LS(D) &kp G &kp LS(D) &kp N4 &kp I &kp LS(N)>;
             label = "PWD";
+            tap-ms = <50>;
         };
 
         shift_f9: shift_f9 {
@@ -144,7 +145,8 @@
             #binding-cells = <0>;
             bindings = <&kp LS(F9)>;
             label = "SHIFT_F9";
-            wait-ms = <60>;
+            wait-ms = <444>;
+            tap-ms = <30>;
         };
 
         lg_tog: lg_tog {
@@ -159,7 +161,7 @@
             #binding-cells = <0>;
             bindings = <&kp LC(KP_DIVIDE)>;
             label = "COMMENT1C";
-            wait-ms = <80>;
+            wait-ms = <444>;
         };
 
         uncommnent1c: uncommnent1c {
@@ -167,7 +169,7 @@
             #binding-cells = <0>;
             bindings = <&kp LC(LS(KP_DIVIDE))>;
             label = "UNCOMMNENT1C";
-            wait-ms = <80>;
+            wait-ms = <444>;
         };
 
         sync: sync {
