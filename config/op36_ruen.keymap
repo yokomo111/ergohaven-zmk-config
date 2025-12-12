@@ -145,7 +145,7 @@
             #binding-cells = <0>;
             bindings = <&kp LS(F9)>;
             label = "SHIFT_F9";
-            wait-ms = <444>;
+            wait-ms = <999>;
             tap-ms = <30>;
         };
 
@@ -161,7 +161,8 @@
             #binding-cells = <0>;
             bindings = <&kp LC(KP_DIVIDE)>;
             label = "COMMENT1C";
-            wait-ms = <444>;
+            wait-ms = <999>;
+            tap-ms = <30>;
         };
 
         uncommnent1c: uncommnent1c {
@@ -169,7 +170,8 @@
             #binding-cells = <0>;
             bindings = <&kp LC(LS(KP_DIVIDE))>;
             label = "UNCOMMNENT1C";
-            wait-ms = <444>;
+            wait-ms = <999>;
+            tap-ms = <30>;
         };
 
         sync: sync {
