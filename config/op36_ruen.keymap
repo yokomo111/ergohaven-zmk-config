@@ -84,7 +84,7 @@
             bindings = <&kp LG(SPACE)>;
             label = "TO_RU";
             wait-ms = <0>;
-            tap-ms = <30>;
+            tap-ms = <20>;
         };
 
         to_en: to_en {
@@ -93,7 +93,7 @@
             bindings = <&kp LG(SPACE)>;
             label = "TO_EN";
             wait-ms = <0>;
-            tap-ms = <30>;
+            tap-ms = <20>;
         };
 
         layer_en: layer_en {
@@ -102,7 +102,7 @@
             bindings = <&to 0 &to_en>;
             label = "LAYER_EN";
             wait-ms = <0>;
-            tap-ms = <30>;
+            tap-ms = <20>;
         };
 
         layer_ru: layer_ru {
@@ -110,7 +110,7 @@
             #binding-cells = <0>;
             bindings = <&to 1 &to_ru>;
             label = "LAYER_RU";
-            tap-ms = <30>;
+            tap-ms = <20>;
             wait-ms = <0>;
         };
 
@@ -129,7 +129,7 @@
 
             label = "EN";
             wait-ms = <0>;
-            tap-ms = <30>;
+            tap-ms = <20>;
         };
 
         pwd: pwd {
@@ -145,7 +145,6 @@
             #binding-cells = <0>;
             bindings = <&kp LS(F9)>;
             label = "SHIFT_F9";
-            wait-ms = <999>;
             tap-ms = <30>;
         };
 
@@ -154,6 +153,7 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &tog 1>;
             label = "LG_TOG";
+            tap-ms = <20>;
         };
 
         comment1c: comment1c {
@@ -161,7 +161,6 @@
             #binding-cells = <0>;
             bindings = <&kp LC(KP_DIVIDE)>;
             label = "COMMENT1C";
-            wait-ms = <999>;
             tap-ms = <30>;
         };
 
@@ -170,7 +169,6 @@
             #binding-cells = <0>;
             bindings = <&kp LC(LS(KP_DIVIDE))>;
             label = "UNCOMMNENT1C";
-            wait-ms = <999>;
             tap-ms = <30>;
         };
 
@@ -179,7 +177,8 @@
             #binding-cells = <0>;
             bindings = <&layer_ru &layer_ru>;
             label = "SYNC";
-            wait-ms = <10>;
+            wait-ms = <2>;
+            tap-ms = <20>;
         };
     };
 
