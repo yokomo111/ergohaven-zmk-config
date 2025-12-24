@@ -83,7 +83,7 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE)>;
             label = "TO_RU";
-            wait-ms = <0>;
+            wait-ms = <11>;
             tap-ms = <40>;
         };
 
@@ -92,7 +92,7 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE)>;
             label = "TO_EN";
-            wait-ms = <0>;
+            wait-ms = <11>;
             tap-ms = <40>;
         };
 
@@ -101,7 +101,7 @@
             #binding-cells = <0>;
             bindings = <&to 0 &to_en>;
             label = "LAYER_EN";
-            wait-ms = <0>;
+            wait-ms = <11>;
             tap-ms = <40>;
         };
 
@@ -111,7 +111,7 @@
             bindings = <&to 1 &to_ru>;
             label = "LAYER_RU";
             tap-ms = <40>;
-            wait-ms = <0>;
+            wait-ms = <11>;
         };
 
         en: en {
@@ -128,7 +128,7 @@
                 <&to_ru>;
 
             label = "EN";
-            wait-ms = <0>;
+            wait-ms = <11>;
             tap-ms = <40>;
         };
 
