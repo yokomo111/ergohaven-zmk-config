@@ -84,7 +84,7 @@
             bindings = <&kp LG(SPACE)>;
             label = "TO_RU";
             wait-ms = <0>;
-            tap-ms = <20>;
+            tap-ms = <40>;
         };
 
         to_en: to_en {
@@ -93,7 +93,7 @@
             bindings = <&kp LG(SPACE)>;
             label = "TO_EN";
             wait-ms = <0>;
-            tap-ms = <20>;
+            tap-ms = <40>;
         };
 
         layer_en: layer_en {
@@ -102,7 +102,7 @@
             bindings = <&to 0 &to_en>;
             label = "LAYER_EN";
             wait-ms = <0>;
-            tap-ms = <20>;
+            tap-ms = <40>;
         };
 
         layer_ru: layer_ru {
@@ -110,7 +110,7 @@
             #binding-cells = <0>;
             bindings = <&to 1 &to_ru>;
             label = "LAYER_RU";
-            tap-ms = <20>;
+            tap-ms = <40>;
             wait-ms = <0>;
         };
 
@@ -129,7 +129,7 @@
 
             label = "EN";
             wait-ms = <0>;
-            tap-ms = <20>;
+            tap-ms = <40>;
         };
 
         pwd: pwd {
@@ -145,7 +145,7 @@
             #binding-cells = <0>;
             bindings = <&kp LS(F9)>;
             label = "SHIFT_F9";
-            tap-ms = <30>;
+            tap-ms = <40>;
         };
 
         lg_tog: lg_tog {
@@ -153,7 +153,7 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &tog 1>;
             label = "LG_TOG";
-            tap-ms = <20>;
+            tap-ms = <40>;
         };
 
         comment1c: comment1c {
@@ -161,7 +161,7 @@
             #binding-cells = <0>;
             bindings = <&kp LC(KP_DIVIDE)>;
             label = "COMMENT1C";
-            tap-ms = <30>;
+            tap-ms = <40>;
         };
 
         uncommnent1c: uncommnent1c {
@@ -169,7 +169,7 @@
             #binding-cells = <0>;
             bindings = <&kp LC(LS(KP_DIVIDE))>;
             label = "UNCOMMNENT1C";
-            tap-ms = <30>;
+            tap-ms = <40>;
         };
 
         sync: sync {
@@ -178,7 +178,7 @@
             bindings = <&layer_ru &layer_ru>;
             label = "SYNC";
             wait-ms = <2>;
-            tap-ms = <20>;
+            tap-ms = <40>;
         };
     };
 
@@ -242,9 +242,9 @@
 
         adj {
             bindings = <
-  &none            &kp F1  &kp F2   &kp F3   &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1  &none       &bootloader  &bt BT_CLR
-  &kp PAUSE_BREAK  &kp F5  &kp F6   &kp F7   &kp F8                     &out OUT_BLE  &kp LCTRL     &kp LSHIFT  &kp LALT     &kp LGUI
-  &none            &kp F9  &kp F10  &kp F11  &kp F12                    &out OUT_USB  &none         &none       &none        &studio_unlock
+  &none            &kp F1  &kp F2   &kp F3   &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1  &none       &none     &bt BT_CLR
+  &kp PAUSE_BREAK  &kp F5  &kp F6   &kp F7   &kp F8                     &out OUT_BLE  &kp LCTRL     &kp LSHIFT  &kp LALT  &kp LGUI
+  &none            &kp F9  &kp F10  &kp F11  &kp F12                    &out OUT_USB  &none         &none       &none     &studio_unlock
                                     &none    &trans   &trans    &trans  &trans        &trans
             >;
 
@@ -253,10 +253,10 @@
 
         layer_6 {
             bindings = <
-  &none      &none      &none       &none          &none                  &none  &none  &none  &none  &pwd
-  &sync      &shift_f9  &comment1c  &uncommnent1c  &none                  &none  &none  &none  &none  &none
-  &layer_en  &none      &none       &none          &none                  &none  &none  &none  &none  &layer_ru
-                                    &none          &none  &none    &none  &none  &none
+  &none      &none      &none       &none          &bootloader                  &none  &none  &none  &none  &pwd
+  &sync      &shift_f9  &comment1c  &uncommnent1c  &none                        &none  &none  &none  &none  &none
+  &layer_en  &none      &none       &none          &none                        &none  &none  &none  &none  &layer_ru
+                                    &none          &none        &none    &none  &none  &none
             >;
         };
     };
