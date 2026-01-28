@@ -180,6 +180,14 @@
             wait-ms = <2>;
             tap-ms = <40>;
         };
+
+        altfshift_f: altfshift_f {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(F))>;
+            label = "ALTFSHIFT_F";
+            tap-ms = <40>;
+        };
     };
 
     keymap {
@@ -253,10 +261,10 @@
 
         layer_6 {
             bindings = <
-  &none      &none      &none       &none          &bootloader                  &kp INSERT  &none  &none  &none  &pwd
-  &sync      &shift_f9  &comment1c  &uncommnent1c  &none                        &none       &none  &none  &none  &none
-  &layer_en  &none      &none       &none          &none                        &none       &none  &none  &none  &layer_ru
-                                    &none          &none        &none    &none  &none       &none
+  &none      &none      &none         &none  &bootloader                  &kp INSERT  &none       &none          &none  &pwd
+  &sync      &shift_f9  &altfshift_f  &none  &none                        &none       &comment1c  &uncommnent1c  &none  &none
+  &layer_en  &none      &none         &none  &none                        &none       &none       &none          &none  &layer_ru
+                                      &none  &none        &none    &none  &none       &none
             >;
         };
     };
