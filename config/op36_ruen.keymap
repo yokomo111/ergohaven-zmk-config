@@ -241,7 +241,7 @@
             bindings = <
   &kp N1         &kp N2     &kp N3     &kp N4     &kp N5                             &kp N6    &kp N7              &kp N8          &kp N9               &kp N0
   &hml LGUI ESC  &kp LALT   &kp LSHFT  &kp LCTRL  &kp PRINTSCREEN                    &kp TAB   &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &kp CAPSLOCK
-  &kp LC(F)      &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp DELETE                         &kp HOME  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END
+  &kp LC(A)      &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp DELETE                         &kp HOME  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END
                                        &none      &none            &trans    &trans  &mo 5     &trans
             >;
 
@@ -261,10 +261,10 @@
 
         layer_6 {
             bindings = <
-  &none      &none      &none         &none       &bootloader                    &kp INSERT  &none  &none  &none  &pwd
-  &sync      &shift_f9  &altfshift_f  &comment1c  &uncommnent1c                  &none       &none  &none  &none  &none
-  &layer_en  &none      &none         &kp LC(A)   &none                          &none       &none  &none  &none  &layer_ru
-                                      &none       &none          &none    &none  &none       &none
+  &none      &none      &none         &none          &bootloader                    &kp INSERT  &none  &none  &none  &pwd
+  &sync      &shift_f9  &altfshift_f  &comment1c     &uncommnent1c                  &none       &none  &none  &none  &none
+  &layer_en  &none      &none         &kp LC(LG(F))  &none                          &none       &none  &none  &none  &layer_ru
+                                      &none          &none          &none    &none  &none       &none
             >;
         };
     };
