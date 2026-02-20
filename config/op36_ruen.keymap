@@ -156,7 +156,7 @@
             tap-ms = <40>;
         };
 
-        comment1c: comment1c {
+        comment: comment1c {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(KP_DIVIDE)>;
@@ -164,7 +164,7 @@
             tap-ms = <40>;
         };
 
-        uncommnent1c: uncommnent1c {
+        uncommnent: uncommnent1c {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(LS(KP_DIVIDE))>;
@@ -217,10 +217,10 @@
 
         sym_en {
             bindings = <
-  &kp TILDE  &kp LT    &kp EQUAL  &kp GT    &kp RU_DQT                    &kp CARET  &kp LBKT  &kp UNDER  &kp RBKT  &kp DLLR
-  &kp BSLH   &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                      &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL
-  &kp HASH   &kp STAR  &kp COLON  &kp FSLH  &kp AMPS                      &kp AT     &kp PIPE  &kp COMMA  &kp DOT   &kp QMARK
-                                  &none     &mo 5       &trans    &trans  &none      &trans
+  &kp TILDE  &kp LT    &kp EQUAL  &kp GT    &kp DQT                     &kp CARET  &kp LBKT  &kp UNDER  &kp RBKT  &kp DLLR
+  &kp BSLH   &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                    &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL
+  &kp HASH   &kp STAR  &kp COLON  &kp FSLH  &kp AMPS                    &kp AT     &kp PIPE  &kp COMMA  &kp DOT   &kp QMARK
+                                  &none     &mo 5     &trans    &trans  &none      &trans
             >;
 
             display-name = "Symbols";
@@ -261,9 +261,9 @@
 
         layer_6 {
             bindings = <
-  &sync      &none      &none      &none      &bootloader                  &kp INSERT  &none      &none         &none       &pwd
-  &kp LC(A)  &none      &none      &kp LC(F)  &none                        &kp LC(F7)  &shift_f9  &altfshift_f  &comment1c  &uncommnent1c
-  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &none                        &none       &none      &none         &none       &none
+  &sync      &none      &none      &none      &bootloader                  &kp INSERT  &none      &none         &none     &pwd
+  &kp LC(A)  &none      &none      &kp LC(F)  &none                        &kp LC(F7)  &shift_f9  &altfshift_f  &comment  &uncommnent
+  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &none                        &none       &none      &none         &none     &none
                                    &none      &none        &none    &none  &none       &none
             >;
         };
