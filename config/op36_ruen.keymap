@@ -195,25 +195,25 @@
             tap-ms = <40>;
         };
 
-        scobki: scobki {
+        scobki_kavichki: scobki {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LPAR &kp DQT &kp DQT &kp RPAR>;
+            bindings = <&kp LPAR &kp DQT &kp DQT &kp RPAR &kp LEFT_ARROW &kp LEFT_ARROW>;
             label = "SCOBKI";
         };
 
-        kvadro_skobki: kvadro_skobki {
+        kvadro_skobki_kavichki: kvadro_skobki {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LBKT &kp DQT &kp DQT &kp RBKT>;
+            bindings = <&kp LBKT &kp DQT &kp DQT &kp RBKT &kp LEFT_ARROW &kp LEFT_ARROW>;
             label = "KVADRO_SKOBKI";
         };
 
-        neravno: neravno {
+        kavichki: skobki_kavichki {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LT &kp GT>;
-            label = "NERAVNO";
+            bindings = <&kp DQT &kp DQT &kp LEFT_ARROW>;
+            label = "SKOBKI_KAVICHKI";
         };
     };
 
@@ -288,9 +288,9 @@
 
         layer_6 {
             bindings = <
-  &sync      &none      &none           &none      &bootloader                  &kp INSERT  &none      &none           &none     &pwd
-  &kp LC(A)  &none      &sk LEFT_SHIFT  &kp LC(F)  &kp LC(G)                    &none       &shift_f9  &altfshift_f    &comment  &uncommnent
-  &kp LC(Z)  &kp LC(X)  &kp LC(C)       &kp LC(V)  &none                        &none       &scobki    &kvadro_skobki  &none     &none
+  &sync      &none      &none           &none      &bootloader                  &kp INSERT  &none             &none                    &none     &pwd
+  &kp LC(A)  &none      &sk LEFT_SHIFT  &kp LC(F)  &kp LC(G)                    &none       &shift_f9         &altfshift_f             &comment  &uncommnent
+  &kp LC(Z)  &kp LC(X)  &kp LC(C)       &kp LC(V)  &none                        &kavichki   &scobki_kavichki  &kvadro_skobki_kavichki  &none     &none
                                         &none      &none        &none    &none  &none       &none
             >;
         };
