@@ -198,7 +198,7 @@
         scobki_kavichki: scobki {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LPAR &kp DQT &kp DQT &kp RPAR &kp LEFT_ARROW &kp LEFT_ARROW>;
+            bindings = <&none &kp LPAR &kp DQT &kp DQT &kp RPAR &kp LEFT_ARROW &kp LEFT_ARROW>;
             label = "SCOBKI";
         };
 
