@@ -78,7 +78,7 @@
 
         kavichki_en {
             bindings = <&kavichki_en>;
-            key-positions = <13 14>;
+            key-positions = <13 12>;
             layers = <2>;
         };
 
