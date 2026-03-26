@@ -75,6 +75,18 @@
             key-positions = <28 29>;
             layers = <0>;
         };
+
+        kavichki_en {
+            bindings = <&kavichki_en>;
+            key-positions = <13 14>;
+            layers = <2>;
+        };
+
+        kavichki_ru {
+            bindings = <&kavichki_ru>;
+            key-positions = <13 14>;
+            layers = <3>;
+        };
     };
 
     macros {
@@ -203,11 +215,18 @@
             label = "KVADRO_SKOBKI";
         };
 
-        kavichki: skobki_kavichki {
+        kavichki_en: skobki_kavichki {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp DQT &kp DQT &kp LEFT_ARROW>;
             label = "SKOBKI_KAVICHKI";
+        };
+
+        kavichki_ru: kavichki_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to_en &kp DQT &kp DQT &kp LEFT_ARROW &to_ru>;
+            label = "KAVICHKI_RU";
         };
     };
 
@@ -282,10 +301,10 @@
 
         layer_6 {
             bindings = <
-  &sync      &none      &none           &none      &bootloader                  &kp INSERT  &none             &none                    &none     &pwd
-  &kp LC(A)  &none      &sk LEFT_SHIFT  &kp LC(F)  &kp LC(G)                    &none       &shift_f9         &altfshift_f             &comment  &uncommnent
-  &kp LC(Z)  &kp LC(X)  &kp LC(C)       &kp LC(V)  &none                        &kavichki   &scobki_kavichki  &kvadro_skobki_kavichki  &none     &none
-                                        &none      &none        &none    &none  &none       &none
+  &sync      &none      &none           &none      &bootloader                  &kp INSERT    &none             &none                    &none     &pwd
+  &kp LC(A)  &none      &sk LEFT_SHIFT  &kp LC(F)  &kp LC(G)                    &none         &shift_f9         &altfshift_f             &comment  &uncommnent
+  &kp LC(Z)  &kp LC(X)  &kp LC(C)       &kp LC(V)  &none                        &kavichki_en  &scobki_kavichki  &kvadro_skobki_kavichki  &none     &none
+                                        &none      &none        &none    &none  &none         &none
             >;
         };
     };
