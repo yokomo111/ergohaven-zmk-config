@@ -84,7 +84,31 @@
 
         kavichki_ru {
             bindings = <&kavichki_ru>;
-            key-positions = <13 14>;
+            key-positions = <13 12>;
+            layers = <3>;
+        };
+
+        scobki_kavichki_en {
+            bindings = <&scobki_kavichki_en>;
+            key-positions = <22 23>;
+            layers = <2>;
+        };
+
+        scobki_kavichki_ru {
+            bindings = <&scobki_kavichki_ru>;
+            key-positions = <22 23>;
+            layers = <3>;
+        };
+
+        kvadro_skobki_kavichki_en {
+            bindings = <&kvadro_skobki_kavichki_en>;
+            key-positions = <2 3>;
+            layers = <2>;
+        };
+
+        kvadro_skobki_kavichki_ru {
+            bindings = <&kvadro_skobki_kavichki_ru>;
+            key-positions = <2 3>;
             layers = <3>;
         };
     };
@@ -201,14 +225,14 @@
             tap-ms = <40>;
         };
 
-        scobki_kavichki: scobki {
+        scobki_kavichki_en: scobki {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LPAR &kp DQT &kp DQT &kp RPAR &kp LEFT_ARROW &kp LEFT_ARROW>;
+            bindings = <&kp LPAR &kp DQT &kp DQT &kp RPAR &kp LEFT_ARROW &kp LEFT_ARROW>;
             label = "SCOBKI";
         };
 
-        kvadro_skobki_kavichki: kvadro_skobki {
+        kvadro_skobki_kavichki_en: kvadro_skobki {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LBKT &kp DQT &kp DQT &kp RBKT &kp LEFT_ARROW &kp LEFT_ARROW>;
@@ -227,6 +251,20 @@
             #binding-cells = <0>;
             bindings = <&to_en &kp DQT &kp DQT &kp LEFT_ARROW &to_ru>;
             label = "KAVICHKI_RU";
+        };
+
+        scobki_kavichki_ru: scobki_kavichki_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to_en &kp LPAR &kp DQT &kp DQT &kp RPAR &kp LEFT_ARROW &kp LEFT_ARROW &to_ru>;
+            label = "SCOBKI_KAVICHKI_RU";
+        };
+
+        kvadro_skobki_kavichki_ru: kvadro_skobki_kavichki_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to_en &kp LBKT &kp DQT &kp DQT &kp RBKT &kp LEFT_ARROW &kp LEFT_ARROW &to_ru>;
+            label = "KVADRO_SKOBKI_KAVICHKI_EN";
         };
     };
 
@@ -301,9 +339,9 @@
 
         layer_6 {
             bindings = <
-  &sync      &none      &none           &none      &bootloader                  &kp INSERT    &none             &none                    &none     &pwd
-  &kp LC(A)  &none      &sk LEFT_SHIFT  &kp LC(F)  &kp LC(G)                    &none         &shift_f9         &altfshift_f             &comment  &uncommnent
-  &kp LC(Z)  &kp LC(X)  &kp LC(C)       &kp LC(V)  &none                        &kavichki_en  &scobki_kavichki  &kvadro_skobki_kavichki  &none     &none
+  &sync      &none      &none           &none      &bootloader                  &kp INSERT    &none                &none                       &none     &pwd
+  &kp LC(A)  &none      &sk LEFT_SHIFT  &kp LC(F)  &kp LC(G)                    &none         &shift_f9            &altfshift_f                &comment  &uncommnent
+  &kp LC(Z)  &kp LC(X)  &kp LC(C)       &kp LC(V)  &none                        &kavichki_en  &scobki_kavichki_en  &kvadro_skobki_kavichki_ru  &none     &none
                                         &none      &none        &none    &none  &none         &none
             >;
         };
