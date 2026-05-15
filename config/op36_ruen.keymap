@@ -47,6 +47,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
         };
+
+        lg_space_macos: lg_space_macos {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LG_SPACE_MACOS";
+            bindings = <&kp SPACE>, <&lg_tog_macos>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
     };
 
     combos {
@@ -273,6 +282,41 @@
             bindings = <&none &kp I &kp N &kp T &kp LPAR &kp I &kp N &kp P &kp U &kp T &kp LPAR &kp RPAR &kp RPAR>;
             label = "INT";
         };
+
+        layer_en_macos: layer_en_macos {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 7 &to_en>;
+            label = "LAYER_EN_MACOS";
+            wait-ms = <15>;
+            tap-ms = <15>;
+        };
+
+        layer_ru_macos: layer_ru_macos {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 8 &to_ru>;
+            label = "LAYER_RU_MACOS";
+            tap-ms = <15>;
+            wait-ms = <15>;
+        };
+
+        lg_tog_macos: lg_tog_macos {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE) &tog 8>;
+            label = "LG_TOG_MACOS";
+            tap-ms = <40>;
+        };
+
+        sync_macos: sync_macos {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&layer_ru_macos &layer_ru_macos>;
+            label = "SYNC_MACOS";
+            wait-ms = <2>;
+            tap-ms = <40>;
+        };
     };
 
     keymap {
@@ -356,20 +400,20 @@
         en_mac {
             display-name = "Base_mac";
             bindings = <
-  &kp Q        &kp W        &kp E         &kp R         &kp T                           &kp Y  &kp U          &kp I         &kp O        &kp P
-  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                           &kp H  &hmr RCTRL J   &hmr RSHFT K  &hmr LALT L  &hmr RGUI SEMICOLON
-  &kp Z        &kp X        &kp C         &kp V         &kp B                           &kp N  &kp M          &kp COMMA     &kp DOT      &kp SQT
-                                          &mo 13        &mo 11  &lg_space    &kp ENTER  &mo 9  &kp BACKSPACE
+  &kp Q        &kp W        &kp E         &kp R         &kp T                                 &kp Y  &kp U          &kp I         &kp O        &kp P
+  &hml LGUI A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                 &kp H  &hmr RCTRL J   &hmr RSHFT K  &hmr LALT L  &hmr RGUI SEMICOLON
+  &kp Z        &kp X        &kp C         &kp V         &kp B                                 &kp N  &kp M          &kp COMMA     &kp DOT      &kp SQT
+                                          &mo 13        &mo 11  &lg_space_macos    &kp ENTER  &mo 9  &kp BACKSPACE
             >;
         };
 
         ru_mac {
             display-name = "Ru_mac";
             bindings = <
-  &kp RU_CYRILLIC_SHORT_I   &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
-  &hml LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr RGUI RU_CYRILLIC_ZHE
-  &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
-                                                                                   &mo 13                    &mo 11              &lg_space    &kp ENTER  &mo 10              &kp BACKSPACE
+  &kp RU_CYRILLIC_SHORT_I   &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                                &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
+  &hml LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LSHFT RU_CYRILLIC_VE  &hml LCTRL RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                &kp RU_CYRILLIC_ER  &hmr RCTRL RU_CYRILLIC_O   &hmr RSHFT RU_CYRILLIC_EL  &hmr LALT RU_CYRILLIC_DE  &hmr RGUI RU_CYRILLIC_ZHE
+  &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I                                 &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E
+                                                                                   &mo 13                    &mo 11              &lg_space_macos    &kp ENTER  &mo 10              &kp BACKSPACE
             >;
         };
 
@@ -415,10 +459,10 @@
 
         spec_mac {
             bindings = <
-  &sync      &none      &int            &none      &bootloader                  &kp INSERT  &none      &none                 &none       &pwd
-  &kp LG(A)  &kp LG(S)  &sk LEFT_SHIFT  &kp LG(F)  &kp LG(G)                    &none       &shift_f9  &kp LA(LS(F))         &comment    &uncommnent
-  &kp LG(Z)  &kp LG(X)  &kp LG(C)       &kp LG(V)  &none                        &none       &kp LC(T)  &kp LC(LS(KP_MINUS))  &kp LC(F7)  &none
-                                        &none      &none        &none    &none  &none       &none
+  &sync_macos  &none      &int            &none      &bootloader                  &kp INSERT  &none      &none                 &none       &pwd
+  &kp LG(A)    &kp LG(S)  &sk LEFT_SHIFT  &kp LG(F)  &kp LG(G)                    &none       &shift_f9  &kp LA(LS(F))         &comment    &uncommnent
+  &kp LG(Z)    &kp LG(X)  &kp LG(C)       &kp LG(V)  &none                        &none       &kp LC(T)  &kp LC(LS(KP_MINUS))  &kp LC(F7)  &none
+                                          &none      &none        &none    &none  &none       &none
             >;
         };
     };
