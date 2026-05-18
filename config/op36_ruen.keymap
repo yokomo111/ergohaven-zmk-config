@@ -120,6 +120,30 @@
             key-positions = <2 3>;
             layers = <3>;
         };
+
+        kha_macos {
+            bindings = <&kp RU_CYRILLIC_HA>;
+            key-positions = <26 27>;
+            layers = <8>;
+        };
+
+        hrdsgn_mac {
+            bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
+            key-positions = <27 28>;
+            layers = <8>;
+        };
+
+        cmben_mac {
+            bindings = <&layer_en>;
+            key-positions = <20 21>;
+            layers = <1 8>;
+        };
+
+        cmbru_mac {
+            bindings = <&layer_ru>;
+            key-positions = <28 29>;
+            layers = <0 7>;
+        };
     };
 
     macros {
