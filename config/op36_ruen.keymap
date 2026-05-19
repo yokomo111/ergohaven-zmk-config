@@ -64,85 +64,61 @@
         kha {
             bindings = <&kp RU_CYRILLIC_HA>;
             key-positions = <26 27>;
-            layers = <1>;
+            layers = <1 8>;
         };
 
         hrdsgn {
             bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
             key-positions = <27 28>;
-            layers = <1>;
+            layers = <1 8>;
         };
 
         cmben {
             bindings = <&layer_en>;
             key-positions = <20 21>;
-            layers = <1>;
+            layers = <1 8>;
         };
 
         cmbru {
             bindings = <&layer_ru>;
             key-positions = <28 29>;
-            layers = <0>;
+            layers = <0 7>;
         };
 
         kavichki_en {
             bindings = <&kavichki_en>;
             key-positions = <13 12>;
-            layers = <2>;
+            layers = <2 9>;
         };
 
         kavichki_ru {
             bindings = <&kavichki_ru>;
             key-positions = <13 12>;
-            layers = <3>;
+            layers = <3 10>;
         };
 
         scobki_kavichki_en {
             bindings = <&scobki_kavichki_en>;
             key-positions = <22 23>;
-            layers = <2>;
+            layers = <2 9>;
         };
 
         scobki_kavichki_ru {
             bindings = <&scobki_kavichki_ru>;
             key-positions = <22 23>;
-            layers = <3>;
+            layers = <3 10>;
         };
 
         kvadro_skobki_kavichki_en {
             bindings = <&kvadro_skobki_kavichki_en>;
             key-positions = <2 3>;
-            layers = <2>;
+            layers = <2 9>;
         };
 
         kvadro_skobki_kavichki_ru {
             bindings = <&kvadro_skobki_kavichki_ru>;
             key-positions = <2 3>;
-            layers = <3>;
-        };
-
-        kha_macos {
-            bindings = <&kp RU_CYRILLIC_HA>;
-            key-positions = <26 27>;
-            layers = <8>;
-        };
-
-        hrdsgn_mac {
-            bindings = <&kp RU_CYRILLIC_HARD_SIGN>;
-            key-positions = <27 28>;
-            layers = <8>;
-        };
-
-        cmben_mac {
-            bindings = <&layer_en>;
-            key-positions = <20 21>;
-            layers = <1 8>;
-        };
-
-        cmbru_mac {
-            bindings = <&layer_ru>;
-            key-positions = <28 29>;
-            layers = <0 7>;
+            layers = <3 10>;
         };
     };
 
@@ -442,7 +418,7 @@
         };
 
         sym_en_mac {
-            display-name = "Symbols";
+            display-name = "Symbols_en_mac";
             bindings = <
   &kp TILDE  &kp LT    &kp EQUAL  &kp GT    &kp DQT                     &kp CARET  &kp LBKT  &kp UNDER  &kp RBKT  &kp DLLR
   &kp BSLH   &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                    &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL
@@ -452,7 +428,7 @@
         };
 
         sym_ru_mac {
-            display-name = "Symbols";
+            display-name = "Symbols_ru_mac";
             bindings = <
   &en TILDE         &en LT       &kp EQUAL     &en GT       &kp RU_DQT                    &en CARET  &en LBKT  &kp UNDER     &en RBKT    &en DLLR
   &kp RU_BACKSLASH  &kp RU_LPAR  &kp RU_MINUS  &kp RPAR     &kp PLUS                      &kp PRCNT  &en LBRC  &kp RU_SEMI   &en RBRC    &kp RU_EXCL
@@ -483,10 +459,10 @@
 
         spec_mac {
             bindings = <
-  &sync_macos  &none      &int            &none      &bootloader                  &kp INSERT  &none      &none                 &none       &pwd
-  &kp LG(A)    &kp LG(S)  &sk LEFT_SHIFT  &kp LG(F)  &kp LG(G)                    &none       &shift_f9  &kp LA(LS(F))         &comment    &uncommnent
-  &kp LG(Z)    &kp LG(X)  &kp LG(C)       &kp LG(V)  &none                        &none       &kp LC(T)  &kp LC(LS(KP_MINUS))  &kp LC(F7)  &none
-                                          &none      &none        &none    &none  &none       &none
+  &sync_macos  &none      &int       &none      &bootloader                  &none  &none  &none  &none  &none
+  &kp LG(A)    &kp LG(S)  &none      &kp LG(F)  &kp LG(G)                    &none  &none  &none  &none  &none
+  &kp LG(Z)    &kp LG(X)  &kp LG(C)  &kp LG(V)  &none                        &none  &none  &none  &none  &none
+                                     &none      &none        &none    &none  &none  &none
             >;
         };
     };
