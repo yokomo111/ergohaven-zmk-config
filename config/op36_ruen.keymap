@@ -180,7 +180,7 @@
         pwd: pwd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp T &kp N6 &kp X &kp N &kp J &kp Z &kp N3 &kp UNDER &kp EXCL &kp LS(D) &kp G &kp LS(D) &kp N4 &kp I &kp LS(N) &kp UNDER &kp G &kp D &kp G &kp LS(W) &kp LS(L)>;
+            bindings = <&none &kp T &kp N6 &kp X &kp N &kp J &kp Z &kp N3 &kp UNDER &kp EXCL &kp LS(D) &kp G &kp LS(D) &kp N4 &kp I &kp LS(N) &kp UNDER &kp G &kp D &kp G &kp LS(W) &kp LS(L) &kp UNDER &kp N &kp P &kp Z>;
             label = "PWD";
             tap-ms = <50>;
         };
