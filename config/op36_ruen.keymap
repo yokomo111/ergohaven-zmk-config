@@ -379,9 +379,9 @@
 
         adj {
             bindings = <
-  &none            &kp F1  &kp F2   &kp F3   &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1  &none       &none     &bt BT_CLR
-  &kp PAUSE_BREAK  &kp F5  &kp F6   &kp F7   &kp F8                     &out OUT_BLE  &kp LCTRL     &kp LSHIFT  &kp LALT  &kp LGUI
-  &none            &kp F9  &kp F10  &kp F11  &kp F12                    &out OUT_USB  &to 0         &to 7       &none     &studio_unlock
+  &none            &kp F1  &kp F2   &kp F3   &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none     &bt BT_CLR
+  &kp PAUSE_BREAK  &kp F5  &kp F6   &kp F7   &kp F8                     &out OUT_BLE  &kp LCTRL     &kp LSHIFT    &kp LALT  &kp LGUI
+  &none            &kp F9  &kp F10  &kp F11  &kp F12                    &out OUT_USB  &to 0         &to 7         &none     &studio_unlock
                                     &none    &trans   &trans    &trans  &trans        &trans
             >;
 
@@ -440,19 +440,19 @@
         nav_mac {
             display-name = "Nav";
             bindings = <
-  &kp N1         &kp N2    &kp N3     &kp N4     &kp N5                             &kp N6              &kp N7              &kp N8          &kp N9               &kp N0
-  &hml LGUI ESC  &kp LALT  &kp LSHFT  &kp LCTRL  &kp PRINTSCREEN                    &kp TAB             &kp LA(LEFT_ARROW)  &kp UP_ARROW    &kp LA(RIGHT_ARROW)  &kp CAPSLOCK
-  &none          &none     &none      &none      &kp DELETE                         &kp LG(LEFT_ARROW)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LG(RIGHT_ARROW)
-                                      &none      &none            &trans    &trans  &mo 12              &trans
+  &kp N1         &kp N2    &kp N3     &kp N4     &kp N5                                  &kp N6              &kp N7              &kp N8          &kp N9               &kp N0
+  &hml LGUI ESC  &kp LALT  &kp LSHFT  &kp LCTRL  &kp LG(LS(NUMBER_4))                    &kp TAB             &kp LA(LEFT_ARROW)  &kp UP_ARROW    &kp LA(RIGHT_ARROW)  &kp CAPSLOCK
+  &none          &none     &none      &none      &kp DELETE                              &kp LG(LEFT_ARROW)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LG(RIGHT_ARROW)
+                                      &none      &none                 &trans    &trans  &mo 12              &trans
             >;
         };
 
         adj_mac {
             display-name = "Adjust";
             bindings = <
-  &none            &kp F1  &kp F2   &kp F3   &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1  &none       &none     &bt BT_CLR
-  &kp PAUSE_BREAK  &kp F5  &kp F6   &kp F7   &kp F8                     &out OUT_BLE  &kp LCTRL     &kp LSHIFT  &kp LALT  &kp LGUI
-  &none            &kp F9  &kp F10  &kp F11  &kp F12                    &out OUT_USB  &to 0         &to 7       &none     &studio_unlock
+  &none            &kp F1  &kp F2   &kp F3   &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none     &bt BT_CLR
+  &kp PAUSE_BREAK  &kp F5  &kp F6   &kp F7   &kp F8                     &out OUT_BLE  &kp LCTRL     &kp LSHIFT    &kp LALT  &kp LGUI
+  &none            &kp F9  &kp F10  &kp F11  &kp F12                    &out OUT_USB  &to 0         &to 7         &none     &studio_unlock
                                     &none    &trans   &trans    &trans  &trans        &trans
             >;
         };
