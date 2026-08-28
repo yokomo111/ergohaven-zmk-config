@@ -374,10 +374,10 @@
 
         nav {
             bindings = <
-  &kp N1           &kp N2    &kp N3     &kp N4      &kp N5                             &kp N6    &kp N7              &kp N8          &kp N9               &kp N0
-  &hml LGUI ESC    &kp LALT  &kp LSHFT  &kp LCTRL   &kp PRINTSCREEN                    &kp TAB   &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &kp CAPSLOCK
-  &kp LC(LA(DEL))  &none     &none      &caps_word  &kp DELETE                         &kp HOME  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END
-                                        &none       &none            &trans    &trans  &mo 5     &trans
+  &kp N1           &kp N2    &kp N3     &kp N4     &kp N5                             &kp N6    &kp N7              &kp N8          &kp N9               &kp N0
+  &hml LGUI ESC    &kp LALT  &kp LSHFT  &kp LCTRL  &kp PRINTSCREEN                    &kp TAB   &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &kp CAPSLOCK
+  &kp LC(LA(DEL))  &none     &none      &none      &kp DELETE                         &kp HOME  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END
+                                        &none      &none            &trans    &trans  &mo 5     &trans
             >;
 
             display-name = "Nav";
