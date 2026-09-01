@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 &mt {
@@ -386,8 +385,8 @@
         adj {
             bindings = <
   &none            &kp F1  &kp F2   &kp F3   &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none     &bt BT_CLR
-  &kp PAUSE_BREAK  &kp F5  &kp F6   &kp F7   &kp F8                     &out OUT_BLE  &kp LCTRL     &kp LSHIFT    &kp LALT  &kp LGUI
-  &none            &kp F9  &kp F10  &kp F11  &kp F12                    &out OUT_USB  &to 0         &to 7         &none     &studio_unlock
+  &kp PAUSE_BREAK  &kp F5  &kp F6   &kp F7   &kp F8                     &none         &kp LCTRL     &kp LSHIFT    &kp LALT  &kp LGUI
+  &none            &kp F9  &kp F10  &kp F11  &kp F12                    &none         &to 0         &to 7         &none     &studio_unlock
                                     &none    &trans   &trans    &trans  &trans        &trans
             >;
 
@@ -457,8 +456,8 @@
             display-name = "Adjust";
             bindings = <
   &none            &kp F1  &kp F2   &kp F3   &kp F4                     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none     &bt BT_CLR
-  &kp PAUSE_BREAK  &kp F5  &kp F6   &kp F7   &kp F8                     &out OUT_BLE  &kp LCTRL     &kp LSHIFT    &kp LALT  &kp LGUI
-  &none            &kp F9  &kp F10  &kp F11  &kp F12                    &out OUT_USB  &to 0         &to 7         &none     &studio_unlock
+  &kp PAUSE_BREAK  &kp F5  &kp F6   &kp F7   &kp F8                     &none         &kp LCTRL     &kp LSHIFT    &kp LALT  &kp LGUI
+  &none            &kp F9  &kp F10  &kp F11  &kp F12                    &none         &to 0         &to 7         &none     &studio_unlock
                                     &none    &trans   &trans    &trans  &trans        &trans
             >;
         };
