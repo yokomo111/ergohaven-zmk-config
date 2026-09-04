@@ -132,8 +132,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE)>;
             label = "TO_RU";
-            wait-ms = <5>;
-            tap-ms = <5>;
+            wait-ms = <7>;
+            tap-ms = <7>;
         };
 
         to_en: to_en {
@@ -141,8 +141,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE)>;
             label = "TO_EN";
-            wait-ms = <5>;
-            tap-ms = <5>;
+            wait-ms = <7>;
+            tap-ms = <7>;
         };
 
         layer_en: layer_en {
@@ -150,8 +150,8 @@
             #binding-cells = <0>;
             bindings = <&to 0 &to_en>;
             label = "LAYER_EN";
-            wait-ms = <5>;
-            tap-ms = <5>;
+            wait-ms = <7>;
+            tap-ms = <7>;
         };
 
         layer_ru: layer_ru {
@@ -159,8 +159,8 @@
             #binding-cells = <0>;
             bindings = <&to 1 &to_ru>;
             label = "LAYER_RU";
-            tap-ms = <5>;
-            wait-ms = <5>;
+            tap-ms = <7>;
+            wait-ms = <7>;
         };
 
         en: en {
@@ -177,8 +177,8 @@
                 <&to_ru>;
 
             label = "EN";
-            wait-ms = <5>;
-            tap-ms = <5>;
+            wait-ms = <7>;
+            tap-ms = <7>;
         };
 
         pwd: pwd {
@@ -202,7 +202,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &tog 1>;
             label = "LG_TOG";
-            tap-ms = <5>;
+            tap-ms = <7>;
+            wait-ms = <7>;
         };
 
         comment: comment1c {
@@ -226,8 +227,8 @@
             #binding-cells = <0>;
             bindings = <&layer_ru &layer_ru>;
             label = "SYNC";
-            wait-ms = <5>;
-            tap-ms = <5>;
+            wait-ms = <7>;
+            tap-ms = <7>;
         };
 
         altfshift_f: altfshift_f {
@@ -292,8 +293,8 @@
             #binding-cells = <0>;
             bindings = <&to 7 &to_en>;
             label = "LAYER_EN_MACOS";
-            wait-ms = <5>;
-            tap-ms = <5>;
+            wait-ms = <7>;
+            tap-ms = <7>;
         };
 
         layer_ru_macos: layer_ru_macos {
@@ -301,8 +302,8 @@
             #binding-cells = <0>;
             bindings = <&to 8 &to_ru>;
             label = "LAYER_RU_MACOS";
-            tap-ms = <5>;
-            wait-ms = <5>;
+            tap-ms = <7>;
+            wait-ms = <7>;
         };
 
         lg_tog_macos: lg_tog_macos {
@@ -310,8 +311,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &tog 8>;
             label = "LG_TOG_MACOS";
-            tap-ms = <5>;
-            wait-ms = <5>;
+            tap-ms = <7>;
+            wait-ms = <7>;
         };
 
         sync_macos: sync_macos {
@@ -319,8 +320,8 @@
             #binding-cells = <0>;
             bindings = <&layer_ru_macos &layer_ru_macos>;
             label = "SYNC_MACOS";
-            wait-ms = <5>;
-            tap-ms = <5>;
+            wait-ms = <7>;
+            tap-ms = <7>;
         };
     };
 
@@ -395,10 +396,10 @@
 
         spec {
             bindings = <
-  &sync      &none      &none           &sys_reset  &bootloader                  &none  &sys_reset  &none                 &none       &pwd
-  &kp LC(A)  &kp LC(S)  &sk LEFT_SHIFT  &kp LC(F)   &kp LC(G)                    &none  &shift_f9   &kp LA(LS(F))         &comment    &uncommnent
-  &kp LC(Z)  &kp LC(X)  &kp LC(C)       &kp LC(V)   &none                        &none  &kp LC(T)   &kp LC(LS(KP_MINUS))  &kp LC(F7)  &none
-                                        &none       &none        &none    &none  &none  &none
+  &sync      &none      &none      &sys_reset  &bootloader                  &none  &sys_reset  &none                 &none       &pwd
+  &kp LC(A)  &kp LC(S)  &none      &kp LC(F)   &kp LC(G)                    &none  &shift_f9   &kp LA(LS(F))         &comment    &uncommnent
+  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)   &kp LC(B)                    &none  &kp LC(T)   &kp LC(LS(KP_MINUS))  &kp LC(F7)  &kp LS(LC(KP_PLUS))
+                                   &none       &none        &none    &none  &none  &none
             >;
         };
 
